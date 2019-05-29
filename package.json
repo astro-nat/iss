@@ -9,6 +9,26 @@
   "dependencies": {
     "express": "^4.13.3"
   },
+  "commands": [
+      {
+        "name": "install dependencies",
+        "type": "custom",
+        "commandLine": "cd ${current.project.path} \nnpm install --no-bin-links \nbower install",
+        "attributes": {
+          "previewUrl": "",
+          "goal": "Build"
+        }
+      },
+      {
+        "name": "run",
+        "type": "custom",
+        "commandLine": "cd ${current.project.path} \ngrunt server --force",
+        "attributes": {
+          "previewUrl": "${server.3000/tcp}",
+          "goal": "Run"
+        }
+      }
+    ],
   "engines": {
     "node": "4.0.0"
   },
