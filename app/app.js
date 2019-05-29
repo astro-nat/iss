@@ -7,6 +7,6 @@ app.get('/', function (req, res) {
   res.send('WE\'RE GOING TO THE MOON!');
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
+})
