@@ -1,46 +1,14 @@
 {
   "name": "iss",
   "version": "1.0.0",
-  "description": "ISS 3D Model",
-  "main": "index.js",
+  "description": "",
+  "main": "app/app.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
-  },
-  "commands": [
-      {
-        "name": "install dependencies",
-        "type": "custom",
-        "commandLine": "cd ${current.project.path} \nnpm install --no-bin-links \nbower install",
-        "attributes": {
-          "previewUrl": "",
-          "goal": "Build"
-        }
-      },
-      {
-        "name": "run",
-        "type": "custom",
-        "commandLine": "cd ${current.project.path} \ngrunt server --force",
-        "attributes": {
-          "previewUrl": "${server.3000/tcp}",
-          "goal": "Run"
-        }
-      }
-    ],
-  "engines": {
-    "node": "4.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/astro-nat/iss"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "author": "Natalie Cluck",
-  "license": "MIT"
+    "express": "^4.13.4"
+  }
 }
