@@ -1,4 +1,26 @@
 {
   "name": "iss",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "description": "ISS 3D Model",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/astro-nat/iss"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Natalie Cluck",
+  "license": "MIT"
 }
