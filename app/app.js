@@ -12,6 +12,17 @@ app.get('/', function (req, res) {
   res.send('WE\'RE GOING TO THE MOON!');
 });
 
+fs.readFile('./index.html', functin (err, html) {
+    if (err) {
+        throw err;
+    }
+    http.createServer(function(request, response) {
+        response.writeHeader(200, {"content-Type": "text/html"});
+        response.write(html);
+        response.end();
+    }).listen(8000);
+});
+
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
